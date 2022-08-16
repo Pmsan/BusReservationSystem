@@ -1,0 +1,27 @@
+
+  <body class="body">
+	  <br>
+		<div id="card">
+		  <br>
+				<div id="subclass">
+					<span class="span">Registration</span>
+				</div>
+			   <div class="form">
+			  <form [formGroup]="userForm" (ngSubmit)="reguser()">
+  
+				  <input type="text"  formControlName="name" name="name" placeholder="Enter your Name">
+				  <input type="text" formControlName="contact" name="contact" placeholder="Enter the Contact number" class="s2">
+				  <input type="text" formControlName="emailId" name="emailId" placeholder="Enter the Email id">
+				  <input type="password" formControlName="password" name="password" placeholder="Enter the Password">
+				  <input type="text" formControlName="gender" name="gender" placeholder="Enter Your Gender(M/F)">
+				  <input type="text" formControlName="address" name="address" placeholder="Enter the Addresss">
+				  <span id="amt"><input type="text" formControlName="walletAmt" name="walletAmt" placeholder="Enter Wallet Amount"></span>
+	
+				<button [disabled]="userForm.invalid" type="submit">Register</button>
+	
+				</form>
+			</div>
+					<p>Already Have an Account ? <a href="">Login</a></p>
+		</div>
+	 
+  </body>

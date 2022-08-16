@@ -1,0 +1,20 @@
+<body class="body">
+    <br>
+    <div id="card">
+        <br>
+        <div class="subclass">
+        <div id="subclass1">
+            <span class="span">Admin Login</span>
+        </div>
+        <div class="form">
+            <form [formGroup]="admin2" (ngSubmit)="adminlog()">
+                <input formControlName="security_id" type="text" name="login" placeholder="Enter the Security id.">
+                <input formControlName="passcode" type="password" name="password" placeholder="Enter the Passcode">
+                <span class="forget" id="forget1">Forget Password ?</span>
+                <button type="submit" class="sign forget">Sign-in</button>
+            </form>
+        </div>
+        <p><a href="https://forms.gle/VihP8QmCvVjjXQ6Z6"> Request For Admin Access ?</a></p>
+    </div>
+</div>
+</body>

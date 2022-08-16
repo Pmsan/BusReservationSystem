@@ -1,0 +1,77 @@
+<body>
+  <link rel="stylesheet" href="bus.component.css">
+  <div class="main">
+    <div class="nav">
+      <span class="Home">Home</span>
+      <button id="Ticket" (click)="findTick()">FindTicket</button>
+      <span id="welcome">WELCOME TO BLACK BUS</span>
+      <button id="logout" (click)="logout()">Logout</button>
+    </div>
+    <table id="input">
+    <tr>
+      <td>
+    <div class="block">
+    <div id="form">
+      <h3>SEARCH BUS</h3>
+      <form [formGroup]="busForm" (ngSubmit)="search()">
+        <span class="source">Source: </span><select class="sel" formControlName="source" class="select1">
+          <option *ngFor="let bs of bslist" value={{bs}}>
+            {{bs}}
+          </option>
+        </select>
+        <span class="destination source">Destination: </span><select class="sel" formControlName="destination" class="select1">>
+          <option *ngFor="let bd of bdlist" value={{bd}}>
+            {{bd}}
+          </option>
+        </select>
+        <span class="type source">BusType: </span><select class="sel" formControlName="busType" class="select1">
+          <option *ngFor="let bt of btlist" value={{bt}}>
+            {{bt}}
+          </option>
+        </select>
+        <span class="travel">Travel-Date: <input type="date" id="departdate" formControlName="departureDate"
+            name="depardate" placeholder="Departure date" class="select2"> </span>
+        <span id="ac"><input type="checkbox" name="isac" formControlName="ac">Do you want Ac</span><br><br>
+      <button [disabled]="busForm.invalid" type="submit" class="button">Search-Bus</button>
+      </form>
+    </div>
+  </div>
+  </td>
+  </tr>
+  </table>
+  
+      <table class="prints" id="print">
+        <thead>
+  
+          <tr class="edit">
+            <th>BUS-NO</th>
+            <th>Bus-Name</th>
+            <th>Source</th>
+            <th>Destination</th>
+            <th>Departure-date</th>
+            <th>Departure-time</th>
+            <th>Bus-type</th>
+            <th>Seats-Availability</th>
+            <th>AC</th>
+            <th>Cost</th>
+            <th>Update-bus</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let b of sbuslist;">
+            <td>{{b.busId}}</td>
+            <td>{{b.busName}}</td>
+            <td>{{b.source}}</td>
+            <td>{{b.destination}}</td>
+            <td>{{b.departureDate}}</td>
+            <td>{{b.departureTime}}</td>
+            <td>{{b.busType}}</td>
+            <td>{{b.seatsAvailable}}</td>
+            <td>{{b.ac}}</td>
+            <td>{{b.cost}}</td>
+            <td><button class="btn" id="book" name="Book" (click)="Book(b)">Book</button></td>
+          </tr>
+        </tbody>
+      </table>
+  
+        <!-- </div> -->

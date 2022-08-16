@@ -1,0 +1,32 @@
+
+<p>display-ticket works!</p>
+<table border="1" bordercolor="Red">
+    <thead>
+    <tr>
+        <th>Ticket ID</th>
+        <th>Booking Date</th>
+        <th>No of Tickets</th>
+        <th>Cost</th>
+        <th>Bus No.</th>
+        <th>Transaction No.</th>
+        <!-- <button type="button" routerLink="/cancel-ticket" routerActiveLink="active">Cancel</button> -->
+    </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let e of tickList;">
+            <td>{{e.tikId}}</td>
+            <td>{{e.bookDate}}</td>
+            <td>{{e.numTick}}</td>
+            <td>{{e.totalCost}}</td>
+            <td>{{e.busId}}</td>
+            <td>{{e.transId}}</td>
+            <button type="button" routerLink="/cancel-ticket" routerActiveLink="active" (click)="cancelticket(e.tikId)">Cancel</button>
+        </tr>
+
+        <!-- <tr *ngFor="let e of tickList;">
+            <td>{{e.tickId}}</td>
+        </tr> -->
+    
+    </tbody>
+    </table>
+

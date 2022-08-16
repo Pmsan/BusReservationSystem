@@ -1,0 +1,36 @@
+<link rel="stylesheet" href="dispallusers.component.css">
+<div class="main">
+    <div class="nav">
+        <button id="back" routerLink="/allbus" routerActiveLink="active">Go Back</button>
+        <button id="logout" routerLink="/adminlogin" routerActiveLink="active">LOGOUT</button>
+    </div>
+
+    <body>
+        <div class="table-container">
+            <h1 class="heading">User Details</h1>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>User-NO</th>
+                        <th>Name</th>
+                        <th>contact</th>
+                        <th>email</th>
+                        <th>gender</th>
+                        <th>address</th>
+                        <th>Wallet-Amount</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let u of userlist">
+                        <td>{{u.user_Id}}</td>
+                        <td>{{u.name}}</td>
+                        <td>{{u.contact}}</td>
+                        <td>{{u.emailId}}</td>
+                        <td>{{u.gender}}</td>
+                        <td>{{u.address}}</td>
+                        <td>{{u.walletAmt}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </body>

@@ -1,0 +1,36 @@
+<link rel="stylesheet" href="updatebus.component.css">
+<div class="main">
+    <div class="nav">
+        <button id="back" routerLink="/allbus" routerActiveLink="active">Go Back</button>
+        <button id="logout" routerLink="/adminlogin" routerActiveLink="active">LOGOUT</button>
+    </div>
+    <form [formGroup]="busForm" (ngSubmit)="updatetnc()">
+        <p> BUS-NO : {{cb.busId}}</p>
+        <p>Bus-Name : {{cb.busName}}</p>
+        Departure-time:<input type="time" formControlName="departureTime" [(ngModel)]="uptime">
+        Cost:<input type="text" formControlName="cost" [(ngModel)]="upcost">
+        <br><br>
+        <button class="btn" type="submit" name="updatebus">update-bus</button>
+    </form>
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <p>updatebus works!</p>
+
+              <form [formGroup]="busForm" (ngSubmit)="updatetnc()">
+                 <p> BUS-NO  :  {{cb.busId}}</p>
+                  <p>Bus-Name : {{cb.busName}}</p>
+                  Departure-time:<input type="time" formControlName="departureTime" [(ngModel)]="uptime">
+                  Cost:<input type="text" formControlName="cost" [(ngModel)]="upcost">
+                  <br><br>
+                  <button type="submit" name="updatebus">update-bus</button>
+              </form> -->

@@ -1,0 +1,28 @@
+<link rel="stylesheet" href="./landingpage.component.css">
+<body>
+    <br>
+    <div class="main"><br>
+        <div class="nav">
+            <span class="admin-login1"><button (click)="adminlogin()" class="admin-login">Admin</button></span>
+            <span class="login1"><button  class="login">Login</button></span>
+            <span class="register1"><button class="register" (click)="register()">Register</button></span>
+        </div>
+        <div class="title">
+            <h2>Bus Reservation system - BlackBus</h2>
+        </div>
+        <div id="card">
+            <div id="subclass">
+                <span>Login</span>
+            </div>
+            <div class="form">
+                <form [formGroup]="admin1" (ngSubmit)="login()">
+                    <span class="icon1">Email Id: </span><input formControlName="emailId" type="text" name="login" placeholder="Enter the Email id.">
+                    <span class="icon1">Password: </span><input  formControlName="password" type="password" name="password" placeholder="Enter the Password">
+                    <span class="forget">Forget Password ?</span>
+                    <button type="submit" class="sign">Sign-in</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+

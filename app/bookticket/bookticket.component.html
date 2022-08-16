@@ -1,0 +1,49 @@
+<!-- 
+<body>
+
+     <div class="smartphone">
+        <div class="content"> 
+     <p> BUS-NO  :  {{cb.busId}}</p>
+                      <p>Bus-Name : {{cb.busName}}</p>
+                     <p>Source : {{cb.source}}</p>
+                      <p>Destination: {{cb.destination}}</p>
+                      <p>Departure-date: {{cb.departureDate}}</p>
+                      <p>Departure-time : {{cb.departureTime}}</p>
+                      <p>Bus-type: {{cb.busType}}</p>
+                      <p>Seats-Availability : {{cb.seatsAvailable}}</p>
+                      <p>AC : {{cb.ac}}</p>
+                      <p>Cost : {{cb.cost}}</p>
+                      <input type="number" name="nooftickets" [(ngModel)]="ntick" (keyup)="tickvalid(ntick)">
+                      <br><br>
+                      <span id="msg">{{message}}</span><br>
+                      <button name="bookticket" (click)="bookticket(cb.busId,ntick,cb.cost)">Book-Ticket</button>
+                    </div>
+                </div> 
+      
+    </body> -->
+
+
+
+
+
+<p>bookticket works!</p>
+     <body>
+            <div class="smartphone">
+                <div class="content">
+                 <p> BUS-NO  :  {{cb.busId}}</p>
+                  <p>Bus-Name : {{cb.busName}}</p>
+                 <p>Source : {{cb.source}}</p>
+                  <p>Destination: {{cb.destination}}</p>
+                  <p>Departure-date: {{cb.departureDate}}</p>
+                  <p>Departure-time : {{cb.departureTime}}</p>
+                  <p>Bus-type: {{cb.busType}}</p>
+                  <p>Seats-Availability : {{cb.seatsAvailable}}</p>
+                  <p>AC : {{cb.ac}}</p>
+                  <p>Cost : {{cb.cost}}</p>
+                  <input type="number" name="nooftickets" [(ngModel)]="ntick" (keyup)="tickvalid(ntick)">
+                  <br><br>
+                  <span id="msg">{{message}}</span><br><br>
+                  <button name="bookticket" id="bokt" [disabled]="true" (click)="bookticket(cb.busId,ntick,cb.cost)">Book-Ticket</button>
+                </div>
+            </div>
+        </body>

@@ -1,0 +1,68 @@
+<link rel="stylesheet" href="./transaction.component.css">
+<body>
+    <br>
+<div class="main">
+    <br>
+<table class="table1">
+<tr>
+    <td>
+<p class="heading">Payment </p>
+</td>
+<td id="details">
+    <h2>Details</h2>
+    <p>Till now transaction can be done using wallet only.Select Mode Of Payment as Wallet. we are pending with other gateays.We will implement later on and update our projects. </p>
+</td>
+</tr>  
+</table>
+<table class="table2">
+    <tr>
+        <td>
+<div class="transaction">
+<form [formGroup]="transactionForm" >
+<p id="hoze">userId:{{uid}}<p>
+<!-- <input type="number" formControlName="userId"  name="userId" [(ngModel)]="uid"> -->
+<hr>
+
+<label for="payment">ModeOfPayment:</label>
+<select name ="payment" id = "payment" formControlName="paymType" class="form-control" name="paymType" [(ngModel)]="transaction1.paymType">
+
+
+    <option *ngFor="let p of paytm"  value={{p}}>
+    {{p}}
+    </option>
+</select>  
+   
+<hr>
+<!-- amount:<input type="number" name="amount" formControlName="amount" class="form-control" [(ngModel)]="totalamount"> -->
+<p id="amt">Total-Amount:{{totalamount}}</p>
+<hr>
+
+<button type="submit" class="btn btn-primary"(click)="addTransaction()">pay</button>
+
+</form>
+</div>
+</td>
+</tr>
+</table>     
+</div> 
+</body>
+
+    <!--<table>
+      <thead>
+          
+              <tr>
+                  <th>userId</th>
+                  <th>paymType</th>
+                  <th>amount</th>
+                  
+              </tr>
+          </thead>
+          <tbody>
+              <tr *ngFor="let t of translist;">
+                  <td>{{t.userId}}</td>
+                   <td>{{t.paymType}}</td>
+                  <td>{{t.amount}}</td>
+                 
+                
+              </tr>
+          </tbody>  -->

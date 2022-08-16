@@ -1,0 +1,77 @@
+<link rel="stylesheet" href="addbus.component.css">
+<body><br>
+<div class="main">
+  <div class="nav">
+    <button id="back" routerLink="/allbus" routerActiveLink="active">Go Back</button>
+    <button id="logout" routerLink="/adminlogin" routerActiveLink="active">LOGOUT</button>
+  </div>
+  <div class="add">
+    <div class="content">
+      <div class="head"><p>Bus Registration Form</p></div>
+      <div class="from1">
+        <form [formGroup]="busForm" (ngSubmit)="newbus()">
+          <p class="name">Bus-Name:<input class="namei" type="text" formControlName="busName" name="busName"></p>
+          <p class="name">Source:<input class="namei" type="text" formControlName="source" name="source"></p>
+          <p class="name">Destination:<input class="namei" type="text" formControlName="destination" name="destination"></p>
+          <p class="name">Departure-Time<input class="namei" type="time" formControlName="departureTime" name="departureTime"></p>
+          <p class="name">Departure-Date:<input class="namei" type="date" formControlName="departureDate" name="depardate"></p>
+          <p class="name">Total seats<input class="namei" type="number" formControlName="seatsAvailable" name="seatsAvailable"></p>
+          <p class="name">Price<input class="namei" type="text" formControlName="cost" name="cost"></p>
+          <span class="name">Bus Type</span> <select class="name" formControlName="busType">
+            <option class="namei" *ngFor="let b of bustype" value={{b}}>
+              {{b}}
+            </option>
+          </select><br><br>
+          <input class="name" type="checkbox" name="isac" formControlName="ac"><span class="name">Is it Ac</span><br><br>
+
+          <button class="submit" [disabled]="busForm.invalid" type="submit">Add new bus</button>
+        </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <p>addbus works!</p>
+
+<form [formGroup]="busForm" (ngSubmit)="newbus()">
+
+    <p>Bus-Name:<input type="text"  formControlName="busName" name="busName"></p>
+    <p>Source:<input type="text" formControlName="source" name="source"></p>
+    <p>Destination:<input type="text" formControlName="destination" name="destination"></p>
+    <p>Departure-Time<input type="time" formControlName="departureTime" name="departureTime"></p>
+    <p>Departure-Date:<input type="date" formControlName="departureDate" name="depardate"></p>
+    <p>Total seats<input type="number" formControlName="seatsAvailable" name="seatsAvailable" ></p>
+    <p>Price<input type="text" formControlName="cost" name="cost" ></p>
+      BusType <select formControlName="busType">
+        <option *ngFor="let b of bustype" value={{b}}>
+                   {{b}}
+          </option>
+        </select><br><br>
+  <input type="checkbox" name="isac" formControlName="ac" >Is it Ac<br><br>
+  
+  <button [disabled]="busForm.invalid" type="submit">Add new bus</button>
+  
+  </form> -->

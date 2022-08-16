@@ -1,0 +1,91 @@
+body{
+    background-color: rgb(19, 18, 18);
+    height: 100vh;
+}
+.table1{
+    float: left;
+}
+.table2{
+    float:right;
+}
+.table1 tr td{
+    display:block;
+}
+.table1 tr td .heading{
+    width:200px;
+    height:100px;
+    background-color: white;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    border-radius: 25px;
+    padding-top:60px;
+    color:rgb(240, 38, 78);
+    margin-left:250px;
+}
+#details{
+    width:350px;
+    height:250px;
+    background-color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 25px;
+    padding-top:10px;
+    color:rgb(30, 27, 27);
+    margin-left:250px;
+}
+#details h2{
+    font-size:30px;
+    font-weight:bold;
+    text-align: center;
+    color:rgb(240, 38, 78);
+}
+#details p{
+    text-align: left;
+    padding-left: 10px;
+    color:rgb(33, 29, 29);
+}
+
+.table2 tr td .transaction{
+    width: 350px;
+    height:300px;
+    background-color: white;
+    margin-right: 200px;
+    border-radius: 20px;
+    padding-top:80px;
+    padding-left: 40px;
+    font-size: 18px;
+}
+#hoze{
+    font-size:22px;
+    font-weight: bold;
+}
+p{
+    font-size: 18px;
+}
+select{
+    width:90px;
+    height:30px;
+    border-radius: 5px;
+    border: 2.5px solid;
+}
+label{
+    font-size:22px;
+    padding-bottom: 30px;
+    font-weight: bold;
+}
+button{
+    font-size: 25px;
+    background-color: orange;
+    border-radius: 8px;
+    margin-left:60px;
+    margin-top:17px;
+    font-weight: bold;
+    text-align: center;
+    margin-left: 110px;
+    width:80px;
+}
+#amt{
+    font-size:22px;
+    font-weight: bold;
+}

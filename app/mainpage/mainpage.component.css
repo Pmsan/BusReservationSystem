@@ -1,0 +1,142 @@
+body{
+    background: rgb(184,85,19);
+  background: linear-gradient(90deg, rgba(184,85,19,0.9976365546218487) 29%, rgba(181,139,54,0.9976365546218487) 100%);
+  }
+  .card{
+    background-color: black;
+    color:white;
+    margin-top: 10px;
+    margin-left:40px;
+  }
+  .nav{
+    margin-top: 8px;
+    padding-top: 20px;
+    font-size:20px;
+    background-color: rgb(100, 82, 82);
+    padding-bottom: 10px;
+  }
+  .nav span{
+    display:inline-flex;
+    padding-left:40px;
+    padding-bottom: 25px;
+    padding-right: 15px;
+  }
+  .same a{
+    text-decoration: none;
+    color:white;
+  }
+  .nav span button{
+    background-color: orange;
+    width:150px;
+    height:35px;
+    font-size: 20px;
+    border-radius: 30px;
+    float: right;
+  }
+  .table table tr td{
+    text-align: center;
+    padding-left: 60px;
+  }
+  .table table tr .image{
+    padding-left: 60px;
+  }
+  .table table tr td h2{
+    font-size: 35px;
+    font-weight:15px;
+    color:rgb(244, 67, 103)
+  }
+  .table table tr td h4{
+    font-size:20px;
+    padding-left: 20px;
+    color:rgb(227, 221, 221);
+  }
+  .login button{
+    background-color: orange;
+    width:100px;
+    height:35px;
+    font-size: 20px;
+    border-radius: 30px;
+    font-weight: bold;
+  }
+  .more button{
+    padding-top: 15px;
+    background-color: orange;
+    width:120px;
+    height:37px;
+    font-size: 20px;
+    border-radius: 30px;
+    text-align: center;
+    padding-top: 4px;
+  }
+  .more button a{
+    text-decoration: none;
+    color:black;
+  }
+  .card2{
+    height:200px;
+    background-color: black;
+    width:auto;
+    color:white;
+    margin-left:40px;
+  }
+  .card2 h2{
+    text-align: center;
+    padding-top: 10px;
+    font-size: 30px;
+    color:rgb(244, 67, 103)
+  }
+  .card2 p{
+    padding-left: 50px;
+    padding-top: 10px;
+    padding-bottom:20px;
+    padding-right: 20px;
+  }
+  .card3{
+    height:150px;
+    background-color: black;
+    width:auto;
+    color:white;
+    margin-left:40px;
+    font-weight: 20px;
+  }
+  .card3 .subcard{
+    text-align: center;
+    padding-top: 10px;
+    font-size: 15px;
+  }
+  .card3 div ul{
+    padding-left: 250px;
+  }
+  .card3 h1{
+    color:rgb(244, 67, 103);
+  }
+  ul li {
+      cursor: pointer;
+      display: inline-block;
+      padding: 10px;
+      margin: 10px;
+      background-color: orange;
+      border-radius: 15px;
+      border: 2px solid black;
+  
+    }
+    
+    ul li:hover {
+      background-color: lightgray;
+    }
+    .active {
+    background-color: rgb(247, 183, 247) !important;
+  }
+  footer{
+    height:50px;
+    background-color: black;
+    width:auto;
+    color:white;
+    margin-left:40px;
+    text-align: center;
+    padding-top: 10px;
+  }
+  .nav .button{
+    float: right;
+    margin-bottom: 20px;
+  }

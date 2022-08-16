@@ -1,0 +1,61 @@
+body{
+    background: rgb(101,86,111);
+background: radial-gradient(circle, rgba(101,86,111,1) 0%, rgba(83,40,40,1) 52%, rgba(252,176,69,1) 100%);
+height: 100vh;
+}
+#card{
+    height:450px;
+    background:rgb(4, 4, 4);
+    margin-top:80px;
+    width:700px;
+    margin-left: 350px;
+    color:white;
+    border-radius: 20px;
+}
+#card #subclass{
+    margin-top: 30px;
+    margin-left: 270px;
+}
+#card #subclass span{
+    color:white;
+    font-size:30px;
+    font-family:'Times New Roman', Times, serif;
+}
+#card form{
+    padding-top: 30px;
+}
+#card form input{
+    height:30px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+#card form input{
+margin-top:10px;
+padding-left:40px;
+}
+#card form{
+    padding-left:110px;
+}
+#card form button{
+    display:block;
+    font-size: 22px;
+    background-color: orange;
+    border-radius: 8px;
+    margin-left:60px;
+    margin-top:17px;
+    font-weight: bold;
+    text-align: center;
+    margin-left: 170px;
+}
+#amt{
+    padding-left:115px;
+}
+p{
+    padding-left:230px;
+    padding-top:15px;
+}
+p a{
+    text-decoration: none;
+    color:rgb(21, 201, 242);
+    font-size: 17px;
+}

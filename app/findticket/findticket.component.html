@@ -1,0 +1,33 @@
+<label for="tick">Ticket ID</label><br>
+<input type="number" id="tick" name="tick" [(ngModel)]="tId"><br>
+<button (click)="findticket(tId)" >FindTicket</button><br><br>
+<table border="1" bordercolor="Red">
+    <thead>
+    <tr>
+        <th>Ticket ID</th>
+        <th>Bus-Name</th>
+        <th>Departure Date</th>
+        <th>Departure Time</th>
+        <th>No of Seats</th>
+        <th>Cost</th>
+        <th>Bus No.</th>
+        <th>Transaction No.</th>
+        <!-- <button type="button" routerLink="/cancel-ticket" routerActiveLink="active">Cancel</button> -->
+    </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let e of tlist">
+            <td>{{e.tikId}}</td>
+            <td>{{e.bus.busName}}</td>
+            <td>{{e.bus.departureDate}}</td>
+            <td>{{e.bus.departureTime}}</td>
+            <td>{{e.numTick}}</td>
+            <td>{{e.totalCost}}</td>
+            <td>{{e.bus.busId}}</td>
+            <td>{{e.transaction.transId}}</td>
+            <!-- <button type="button" routerLink="/cancel-ticket" routerActiveLink="active" (click)="findticket(e.tikId)">Cancel</button> -->
+        </tr>
+        
+    </tbody>
+    </table><br><br>
+    <button type="button" routerLink="/bus" routerActiveLink="active">Back</button>

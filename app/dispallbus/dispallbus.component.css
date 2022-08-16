@@ -1,0 +1,105 @@
+.main {
+    background-color: rgb(40, 40, 43);
+    color: white;
+    height: 100vh;
+    width: 100%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+.nav {
+    padding-top: 30px;
+    height: 35px;
+    background-color: rgb(54, 69, 79);
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    font-size: 20px;
+}
+.nav #displayticket {
+    margin-bottom: 35px;
+    background-color: aquamarine;
+    font-size: large;
+    font-weight: bold;
+    border-radius: 10px;
+    height: 28px;
+
+}
+
+.nav #addnewbus {
+    margin-bottom: 35px;
+    background-color: aquamarine;
+    font-size: large;
+    font-weight: bold;
+    border-radius: 10px;
+    height: 28px;
+}
+
+.nav #displayuser{
+    margin-bottom: 35px;
+    background-color: aquamarine;
+    font-size: large;
+    font-weight: bold;
+    border-radius: 10px;
+    height: 28px;
+}
+.nav #logout{
+    margin-bottom: 35px;
+    background-color: crimson;
+    font-size: large;
+    font-weight: bold;
+    border-radius: 10px;
+    height: 28px;
+}
+.tablecontainer{
+    padding: 0 10%;
+    margin: 40px auto 0 ;
+    
+}
+.heading{
+    font-size: 40px;
+    text-align: center;
+    color: yellow;
+    margin-bottom: 40px;
+}
+.table{
+    width: 100%;
+    border-collapse: collapse;
+}
+.table thead {
+    background-color: rgb(226, 43, 52);
+}
+.table thead tr th{
+    font-size: 14px;
+    font-weight: medium;
+    letter-spacing: 0.35px;
+    color: white;
+    opacity: 1;
+    padding: 12px;
+    vertical-align: top;
+    border: 1px solid #fdfeff85;
+}
+.table tbody tr td{
+    font-size: 14px;
+    letter-spacing: 0.35px;
+    font-weight: normal;
+    color: #f1f1f1;
+    background-color: #3c3f44;
+    padding: 8px;
+    text-align: center;
+    border: 1px solid #dee2e685;
+}
+.table tbody tr td .btn{
+    width: 100%;
+    border-radius: 15px;
+    text-decoration: none;
+    line-height: 25px;
+    display: inline-block;
+    background-color: #4ac521;
+    font-weight: medium;
+    color:#ffffff;
+    text-align: center;
+    border: 1px solid transparent;
+    font-size: 14px;
+    opacity: 1;
+}

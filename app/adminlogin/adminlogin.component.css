@@ -1,0 +1,58 @@
+body{
+    background: rgb(101,86,111);
+background: radial-gradient(circle, rgba(101,86,111,1) 0%, rgba(83,40,40,1) 52%, rgba(252,176,69,1) 100%);
+height: 100vh;
+}
+#card{
+    height:400px;
+    background:rgb(4, 4, 4);
+    margin-top:80px;
+    width:700px;
+    margin-left: 350px;
+    color:white;
+    border-radius: 20px;
+}
+#card .subclass{
+    margin-top: 60px;
+    margin-left: 250px;
+}
+#card .subclass #subclass1{
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+}
+#card .subclass .form{
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+#card .subclass .form input{
+    display:block;
+    height:35px;
+    margin-top:20px;
+    width:200px;
+    border-radius: 8px;
+}
+#card .subclass .form .forget{
+    display: block;
+}
+#forget1{
+    padding-top:15px;
+    color:rgb(214, 38, 38);
+}
+.sign{
+    font-size: 20px;
+    background-color: orange;
+    border-radius: 8px;
+    margin-left:60px;
+    margin-top:17px;
+    font-weight: bold;
+}
+p{
+    padding-top:18px;
+}
+p a{
+    text-decoration: none;
+    color:rgb(51, 175, 206);
+    font-size: 17px;
+
+}
